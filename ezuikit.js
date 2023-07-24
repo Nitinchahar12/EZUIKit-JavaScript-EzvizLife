@@ -1615,11 +1615,11 @@ function addCss(filepath, callback) {
     this.opt.id = playParams.id;
     this.log("初始化解码器---开始");
     var _this = this;
-    _this.opt.domain = playParams.url.match(/ezopen:\/\/(\S*)\.(ys7|ezviz)\.com/)[1];
+    _this.opt.domain = playParams.url.match(/ezopen:\/\/(\S*)\.(ys7|ezvizlife)\.com/)[1];
     if (playParams.env) {
       var environmentParams = playParams.env;
       domain = environmentParams.domain;
-      _this.opt.domain = domain.match(/https:\/\/(\S*)\.ezviz(\S*)\.com/)[1];
+      _this.opt.domain = domain.match(/https:\/\/(\S*)\.ezvizlife(\S*)\.com/)[1];
     }
     if( _this.opt.domain.indexOf("@")!== -1) {
       _this.opt.domain =  _this.opt.domain.split("@")[1];
